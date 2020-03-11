@@ -1,0 +1,816 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td
+{margin: 0;padding: 0;}
+ul,ol,li{ list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+
+/*头部开始*/
+
+body{
+	width: 100%;
+	font-family:"Microsoft Yahei";
+}
+header{
+	width:100%;
+	text-align: center;
+	font-family:"Microsoft Yahei";
+}
+/*头部   上面部分*/
+header .header_top{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #ec662c;
+}
+.header_top .header_top_content{
+	width: 1080px;
+	margin: 0 auto;
+	height: 45px;
+	/*overflow: hidden;*/
+}
+.header_top .header_top_content a{
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	display: block;
+}
+.header_top .header_top_content ._top_content_left{
+	float: left;
+}
+.header_top .header_top_content ._top_content_right{
+	float: right;
+}
+.header_top .header_top_content ._top_content_right a{
+	margin:0 20px;
+	position: relative;
+	float: left;
+}
+.header_top .header_top_content ._top_content_right img{
+	position: absolute;
+	display: none;
+	top: 45px;
+	width: 100px;
+	height: 100px;
+	left:-6px;
+	background-color: #fff;
+	z-index: 999;
+}
+.header_top .header_top_content ._top_content_right a:nth-child(1):hover img{
+	display: block;
+}
+/*头部   下面部分*/
+header .header_bottom{
+	margin: 15px auto;
+	width: 1080px;
+	height: 50px;
+	line-height: 50px;
+	/*font-size: 20px;*/
+	font-weight: 500;
+}
+.m_head_nav{
+	display: none;
+}
+.m_head_navMeng{
+	display: none;
+}
+header .header_bottom>.logo{
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+header .header_bottom>.logo>a{
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	position: relative;
+}
+header .header_bottom>.logo>a>img{
+	width: 260px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+header .header_bottom>ul{
+	float: right;
+}
+header .header_bottom>ul>li{
+	list-style: none;
+	float: left;
+	height: 50px;
+	position: relative;
+}
+header .header_bottom>ul>li>a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	margin:0 auto;
+	padding:0 20px;
+	color: #000;
+}
+header .header_bottom ul ul{
+	position: absolute;
+	width:100%;
+	top:50px;
+	left: 0;
+	z-index: 52;
+	font-size: 13px;
+	display: none;
+}
+header .header_bottom ul ul>li{
+	/*width: 130px;*/
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	border-bottom: 1px solid #D6D6D6;
+	background-color: #F0F0F0;
+	cursor: pointer;
+}
+header .header_bottom>ul>li:hover{
+	background-color: #ec662c;
+}
+header .header_bottom>ul>li:hover>a{
+	color: #fff;
+}
+header .header_bottom ul>li:hover ul{
+	display: block;
+}
+header .header_bottom ul ul>li:hover{
+	background-color: #E2E2E2;
+}
+header .header_bottom ul ul>li>a{
+	color: #000;
+	display: block;
+}
+/*头部 响应式代码 开始*/
+
+
+/*头部 响应式代码 结束*/
+/*头部结束*/
+/*右侧浮动联系窗口 开始*/
+#newBridge .nb-icon-skin-0 .nb-icon-inner-wrap{
+	background-color: #ec662c !important;
+}
+.FixedGlobalRight{
+  position: fixed;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1999;
+  margin-top: -29px;
+}
+.FixedGlobalRight ul li{
+  background-color: #ec662c;
+  margin-bottom: 5px;
+  width: 148px;
+  height: 57px;
+  right: 100%;
+  text-align: center;
+  color: #fff;
+  top: 0;
+}
+.FixedGlobalRight ul li.Scroll_To_TOP{
+	cursor: pointer;
+}
+.FixedGlobalRight ul li:nth-child(3) i{
+	font-size:25px;
+}
+.FixedGlobalRight ul li:not(.FixedGlobalRight_last){
+  line-height: 57px;
+}
+.FixedGlobalRight ul li>div:nth-child(1){
+  height: 57px;
+  line-height: 57px;
+}
+.FixedGlobalRight ul li>div:nth-child(2){
+  text-align: center;
+  background-color: #ec662c;
+  padding-bottom: 15px;
+}
+.FixedGlobalRight ul li i{
+  color: #fff;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.FixedGlobalRight ul li img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+/*右侧浮动联系窗口 结束*/
+
+/*关于凯东源等  开始*/
+.container .about_kdy{
+	width:100%;
+	height: 100%;
+	padding: 95px 68px 0;
+	box-sizing: border-box;
+	background-color: #ec662c;
+	color: #fff;
+}
+.container .about_kdy>.about_top{
+	font-size: 29px;
+	font-weight: 700;
+}
+.container .about_kdy>.about_bottom{
+	font-size: 22px;
+	margin-top: 40px;
+}
+/*关于凯东源等  结束*/
+
+/*尾部开始*/
+footer{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 70px;
+	font-size: 14px;
+	margin-top: 58px;
+	color: #fff;
+	padding-bottom: 50px;
+	background-color: #ec662c;
+}
+footer a{
+	color: #fff;
+}
+footer>.Foot_Top{
+	width: 1080px;
+	margin: 0 auto;
+	border-bottom: 1px solid #888;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+footer>.Foot_Top>div{
+	float: left;
+}
+footer>.Foot_Top .Foot_Top_Left img{
+	width: 28px;
+	margin-right: 14px;
+	float: left;
+}
+footer>.Foot_Top .Foot_Top_Left>div:nth-child(1){
+	font-size: 23px;
+	font-weight: 700;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+footer>.Foot_Top .Foot_Top_Left>div:nth-child(1) span{
+	float: left;
+}
+footer>.Foot_Top .Foot_Top_Left>ul{
+	margin-bottom: 15px;
+}
+footer>.Foot_Top .Foot_Top_Left>ul a{
+	border-right: 1px solid #fff;
+	padding:0  7px;
+}
+footer>.Foot_Top .Foot_Top_Left>ul a:first-child{
+	padding-left: 0;
+}
+footer>.Foot_Top .Foot_Top_Left>ul a:last-child{
+	border-right: none;
+	padding-right: 0; 
+}
+footer>.Foot_Top .Foot_Top_Left>div:nth-child(3){
+	margin-bottom: 10px;
+}
+footer>.Foot_Top>div.Foot_Top_Center{
+	width: 310px;
+	float: right;
+	margin-right: 30px;
+}
+.Foot_Top_Center>div:nth-child(1){
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.Foot_Top_Center ul a{
+	margin-right: 15px;
+	line-height: 25px;
+}
+.Foot_Top_Center img{
+	width: 33px;
+	margin-right: 10px;
+}
+footer a:hover{
+	text-decoration-line: underline;
+}
+footer>.Foot_Top>div.Foot_Top_Right{
+	float: right;
+}
+.Foot_Top_Right>div{
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+.Foot_Top_Right>div:nth-child(1){
+	margin-right: 20px;
+}
+.Foot_Top_Right img{
+	width: 100px;
+}
+.Foot_Bottom{
+	width: 1080px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15px;
+}
+.Foot_Bottom>span:nth-child(1),.Foot_Bottom>span:nth-child(2){
+	border-right: 1px solid #fff;
+}
+footer div#NetworkSupervision{
+	text-align: center;
+	display: inline-block;
+}
+footer div#NetworkSupervision img{
+	width: 13px;
+	height: auto;
+}
+footer .m_Foot_bottom{
+  display: none;
+}
+footer .m_banquan{
+	display: none;
+}
+/*尾部结束*/
+
+/*关于凯东源模块  开始*/
+.SubpageNavBtn{
+	display: none;
+}
+.container{
+	width:100%;
+}
+.container>.contain_top{
+	width:100%;
+}
+.container>.contain_top>img{
+	width: 100%;
+}
+.contain_bottom{
+	width: 1280px;
+	margin: 0 auto;
+}
+.contain_bottom>div{
+	float: left;
+}
+.contain_bottom>.bottom_left{
+	width: 320px;
+	position: relative;
+	height: 800px;
+}
+.botLeft_position{
+	width: 320px;
+	height: 800px;
+	position: absolute;
+	left: 0;
+	top: -165px;
+}
+.botLeft_position>ul{
+	padding-bottom: 60px;
+	background-color: #EDEDED;
+}
+.botLeft_position>ul>li{
+	width: 320px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #EDEDED;
+	text-align: center;
+	border:1px solid rgba(0,0,0,.02);
+	border-left: 5px solid #EDEDED;
+	cursor: pointer;
+	box-sizing: border-box;
+
+}
+.botLeft_position>ul>li:hover{
+	background-color: #fff;
+	border-left: 5px solid #ec662c;
+}
+.botLeft_position>ul>li>a{
+	color: #808080;
+	font-family: "Microsoft Yahei",Arial,Tahoma,sans-serif;
+	display: block;
+
+}
+.contain_bottom>.bottom_left .left_top{
+	width: 320px;
+	height: 320px;
+}
+/*右边内容*/
+.contain_bottom>.bottom_right{
+	width: 860px;
+	padding: 0 50px;
+}
+.content_head{
+	width: 100%;
+	color: #ec662c;
+	padding: 45px 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+.content_head h2{
+	font-weight: 300;
+	font-size: 36px;
+	font-family: SimHei;
+}
+.content_head h4{
+	display: none;
+	font-weight: 500;
+	font-size: 36px;
+	font-family: 'dincond-boldregular',"Microsoft Yahei",Arial,Tahoma,sans-serif;
+}
+.content{
+	color: #595959;
+	font-size: 15px;
+}
+.content>p{
+	margin:30px 0;
+	text-indent:2em;
+	line-height: 32px;
+}
+.content img{
+	width: 860px;
+	margin: 10px 0;
+}
+.content>p>span{
+	color: #ec662c;
+}
+.content p.indent{
+	text-indent: 4em;
+}
+.content>p.cityTitle{
+	text-indent:0;
+	font-weight: 300;
+	font-size: 16px;
+}
+.content>h3,.content>h4{
+	margin: 25px 0;
+	
+}
+.content>p.noIndent{
+	text-indent: 0;
+}
+/*关于凯东源模块  结束*/
+/*媒体查询*/
+/*reset.css*/
+@media screen and (max-width: 768px){
+	body{
+		/*font-size:12px;*/
+	}
+	/*头部开始*/
+	header{
+		width:100%;
+		height: 12vw;
+	}
+	header .header_top{
+		display: none;
+	}
+	header .header_bottom{
+		position: fixed;
+		z-index: 99999;
+		background-color: #fff; 
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		height: 12vw;
+		line-height: 12vw;
+	}
+	header .header_bottom>.logo{
+		width: 35vw;
+		height: 12vw;
+		line-height: 12vw;
+	}
+	header .header_bottom>.logo>a{
+		height: 12vw;
+		line-height: 12vw;
+		margin-left: 5vw;
+	}
+	header .header_bottom>.logo>a>img{
+		width: 35vw;
+	}
+	.header_bottom .m_head_nav{
+		display: block;
+		float: right;
+		width: 12vw;
+		height: 12vw;
+		text-align: center;
+		position: relative;
+	}
+	.header_bottom .m_head_nav span{
+		width:6vw;
+		height: 0.5vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-1vw);
+		-ms-transform:translate(-50%,-1vw); 	/* IE 9 */
+		-moz-transform:translate(-50%,-1vw); 	/* Firefox */
+		-webkit-transform:translate(-50%,-1vw); /* Safari 和 Chrome */
+		-o-transform:translate(-50%,-1vw); 	/* Opera */
+		background-color: #ec662c;
+		transition: all 1s;
+		-moz-transition: all 1s; /* Firefox 4 */
+		-webkit-transition: all 1s; /* Safari 和 Chrome */
+		-o-transition: all 1s; /* Opera */
+	}
+	.header_bottom .m_head_nav span:nth-child(2){
+		transform: translate(-50%,1vw);
+		-ms-transform:translate(-50%,1vw); 	/* IE 9 */
+		-moz-transform:translate(-50%,1vw); 	/* Firefox */
+		-webkit-transform:translate(-50%,1vw); /* Safari 和 Chrome */
+		-o-transform:translate(-50%,1vw); 	/* Opera */
+	}
+	.m_head_navMeng{
+		display: none;
+		background-color: rgba(0,0,0,0.55);
+		width: 100%;
+		/*height: 100%;*/
+		overflow: scroll;
+		padding: 0 10vw 0;
+		box-sizing: border-box;
+		position: fixed;
+		top: 12vw;
+		left: 0;
+	}
+	.m_head_navMeng div{
+		border-bottom: 1px solid #fff;
+	}
+	.m_head_navMeng div:last-child{
+		border-bottom: none;
+	}
+	.m_head_navMeng div span,.m_head_navMeng div a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.m_head_navMeng div a{
+		padding: 5vw 0;
+		font-size: 4vw;
+		text-align: left;
+		color: #fff;
+	}
+	.header_bottom>ul{
+	  display: none;
+	}
+	
+	.FixedGlobalRight{
+		display: none;
+		/*隐藏侧边浮动联系方式*/
+	}
+	/*头部结束*/
+	/*关于凯东源模块  开始*/
+	.SubpageNavBtn{
+		font-size: 3.4vw;
+		display: block;
+		position: fixed;
+		left: 2vw;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.SubpageNavBtn>div{
+		width: 10vw;
+		position: relative;
+		background-color: #EC662C;
+		border-bottom: 1px solid #fff;
+	}
+	.SubpageNavBtn>div:last-child{
+		border-bottom: none;
+	}
+	.SubpageNavBtn>div> a {
+		color: #fff;
+		width: 10vw;
+		padding: 2vw 0;
+		display: block;
+		text-align: center;
+	}
+	.SubpageNavBtn>div i{
+		color: #fff;
+		margin-bottom: 1vw;
+		display: block;
+	}
+	.SubpageNavBtn>div span{
+		display: block;
+	}
+	.SubpageNavBtn i{
+		font-size: 5vw;
+	}
+	.container .about_kdy{
+		/*width:100%;
+		height: 100%;
+		padding: 95px 68px 0;
+		box-sizing: border-box;
+		background-color: #ec662c;
+		color: #fff;*/
+	}
+	/*.container .about_kdy>.about_top{
+		font-size: 29px;
+		font-weight: 700;
+	}
+	.container .about_kdy>.about_bottom{
+		font-size: 22px;
+		margin-top: 40px;
+	}*/
+	/*.container>.contain_top{
+		width:100%;
+	}*/
+	/*.container>.contain_top>img{
+		width: 100%;
+	}*/
+	.contain_bottom{
+		width: 100%;
+		margin: 0 auto;
+	}
+	/*.contain_bottom>div{
+		float: left;
+	}*/
+	.contain_bottom>.bottom_left{
+		/*width: 320px;
+		position: relative;
+		height: 800px;*/
+		display: none;
+	}
+	/*.botLeft_position{
+		width: 320px;
+		height: 800px;
+		position: absolute;
+		left: 0;
+		top: -165px;
+	}
+	.botLeft_position>ul{
+		padding-bottom: 60px;
+		background-color: #EDEDED;
+	}*/
+/*	.botLeft_position>ul>li{
+		width: 320px;
+		height: 60px;
+		line-height: 60px;
+		background-color: #EDEDED;
+		text-align: center;
+		border:1px solid rgba(0,0,0,.02);
+		border-left: 5px solid #EDEDED;
+		cursor: pointer;
+		box-sizing: border-box;
+
+	}*/
+	/*.botLeft_position>ul>li:hover{
+		background-color: #fff;
+		border-left: 5px solid #ec662c;
+	}
+	.botLeft_position>ul>li>a{
+		color: #808080;
+		font-family: "Microsoft Yahei",Arial,Tahoma,sans-serif;
+		display: block;
+
+	}
+	.contain_bottom>.bottom_left .left_top{
+		width: 320px;
+		height: 320px;
+	}*/
+	/*右边内容*/
+	.contain_bottom>.bottom_right{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 10vw  0 18vw;
+	}
+	.content_head{
+		width: 100%;
+		color: #ec662c;
+		box-sizing: border-box;
+		padding: 4vw 0;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.content_head h2{
+		font-weight: 300;
+		font-size: 5vw;
+	}
+	/*.content_head h4{
+		display: none;
+		font-weight: 500;
+		font-size: 36px;
+		font-family: 'dincond-boldregular',"Microsoft Yahei",Arial,Tahoma,sans-serif;
+	}*/
+	.content{
+		color: #595959;
+		font-size: 4vw;
+	}
+	.content>p{
+		margin:3vw 0;
+		text-indent:2em;
+		line-height: 6.3vw;
+	}
+	.content img{
+		width: 100%;
+		margin: 10px 0;
+	}
+	/*.content>p>span{
+		color: #ec662c;
+	}
+	.content p.indent{
+		text-indent: 4em;
+	}*/
+/*	.content>p.cityTitle{
+		text-indent:0;
+		font-weight: 300;
+		font-size: 16px;
+	}
+	.content>h3,.content>h4{
+		margin: 25px 0;
+		
+	}
+	.content>p.noIndent{
+		text-indent: 0;
+	}*/
+	/*关于凯东源模块  结束*/
+	/*关于凯东源等  结束*/
+	/*尾部开始*/
+	footer{
+		background-color: #fff;
+		color: #777;
+		padding-top: 0;
+		margin-top: 20px;
+		padding-bottom: 0;
+	}
+	.Foot_Top{
+		display: none;
+	}
+	.Foot_Bottom{
+		width: 100%;
+		margin-bottom:23vw;
+	}
+	footer .m_Foot_bottom{
+		position: fixed;
+		z-index: 99999;
+		bottom: 0;
+		left: 0;
+	    display: block;
+	    background-color: #ec662c;
+	    color: #fff;
+	    width: 100%;
+	    /*overflow-x: hidden;*/
+	}
+	footer .m_Foot_bottom>div>.m_FootBottom_ClickItem{
+		width: 33%;
+		text-align: center;
+		float: left;
+		padding: 2.5vw 0;
+		box-sizing: border-box;
+		/*border-right: 1px solid #fff;*/
+	}
+	footer .m_Foot_bottom>div:nth-child(2) .m_FootBottom_ClickItem{
+		width: 34%;
+	}
+	footer .m_Foot_bottom>div:nth-child(3) .m_FootBottom_ClickItem{
+		/*width: 34%;*/
+		border:none;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_ClickItem i{
+		font-size: 5.7vw;
+		margin-bottom: 1vw;
+		display: block;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_ClickItem span{
+		font-size: 4vw;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_WX_Meng{
+		position: fixed;
+		display: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 999999;
+		height: 100%;
+		overflow: hidden;
+		background-color: rgba(0,0,0,0.7);
+		text-align: center;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_WX_Meng>div{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	footer .m_Foot_bottom>div.m_FootBottom_WX i.icon-guanbi{
+		position: fixed;
+		/*display: none;*/
+		z-index: 9999990;
+		top:3vw;
+		right: 3vw;
+		font-size: 7vw;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_WX_Meng>div span{
+		margin-bottom: 3vw;
+		display: block;
+		font-size:6vw;
+	}
+	footer .m_Foot_bottom>div .m_FootBottom_WX_Meng img{
+		width:50vw;
+	}
+	footer .m_banquan{
+		display: block;
+	}
+	footer .pc_banquan{
+		display: none;
+	}
+}

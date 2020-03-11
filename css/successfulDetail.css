@@ -1,0 +1,122 @@
+.container>.headImg{
+	width: 100%;
+}
+.container>.headImg>img{
+	width: 100%;
+}
+.newsDetail{
+	width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	min-height: 680px;
+}
+.detailLeft{
+	width: 293px;
+	height: 100%;
+	float: left;
+	padding-top: 80px;
+}
+.detailLeft>div{
+	min-width: 125px;
+	padding: 10px;
+	font-size: 14px;
+	background-color:#FCFCFC;
+	margin-bottom: 7px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.detailLeft>div>a{
+	color: #858585;
+	display: block;
+}
+.detailLeft>div:hover{
+	background-color: #ec662c;
+}
+.detailLeft>div:hover a{
+	color: #fff;
+}
+.detailRight{
+	float: left;
+	width: 986px;
+	padding:25px  60px;
+	box-sizing: border-box;
+}
+.detailRight>.btn{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: right;
+}
+.detailRight>.btn>i{
+	font-size: 25px;
+	color: #ec662c;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.detailRight>h1{
+	color: #20292c;
+	text-align: center;
+	font-family: 'dincond-boldregular',"Microsoft Yahei",Arial,Tahoma,sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	margin:20px 0;
+}
+.detailRight>.newsContaniner{
+	font-size: 14px;
+	color: #626262;
+}	
+.detailRight>.newsContaniner>figcaption{
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+}
+.detailRight>.newsContaniner img{
+	width: 700px;margin: 0 auto;display: block;
+}
+.detailRight>.newsContaniner p{
+	line-height: 24px;
+	text-indent: 2em;
+}
+.detailRight>.newsContaniner>div>strong{
+	display: block;
+	margin: 30px 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px){
+	.newsDetail{
+		width: 100%;
+		min-height: 0;
+	}
+	.detailLeft{
+		display: none;
+	}
+	.detailRight{
+		width: 100%;
+		padding:0 10vw 0;
+	}
+	.detailRight>.btn{
+		width: 100%;
+		height: 10vw;
+		line-height: 10vw;
+	}
+	.detailRight>.btn>i{
+		font-size: 6vw;
+		margin-right: 0;
+	}
+	.detailRight>h1{
+		font-size: 5vw;
+		margin: 4vw 0;
+	}
+	.detailRight>.newsContaniner{
+		font-size: 4vw;
+	}
+	.detailRight>.newsContaniner img{
+		width: 100%;
+	}
+	.detailRight>.newsContaniner p{
+		margin:3vw 0;
+		text-indent:2em;
+		line-height: 6.3vw;
+	}
+}

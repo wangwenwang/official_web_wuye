@@ -1,0 +1,99 @@
+.content i.iconfont{
+	color: #e9811a;
+	font-size: 18px;
+}
+.content>ul,.content>ul>li{
+	width: 860px;
+}
+.content>ul>li{
+	border-bottom: 1px dashed #d2d2d2;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.content>ul>li>.recruit_position{
+	width: 100%;
+	height: 48px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 14px 0;
+	cursor: pointer;
+}
+.content>ul>li>.recruit_position>div{
+	position: relative;
+	width: 50px;
+	height: 20px;
+	float: left;
+	overflow: hidden;
+	
+}
+.content>ul>li>.recruit_position>span{
+	float: left;
+}
+.content>ul>li>.recruit_position>div>i{
+	position: absolute;
+	left: 0;
+}
+.recruit_position>div>i.icon-jia1{
+	top:0;
+}
+.recruit_position>div>i.icon-jian1{
+	top:-20px;
+}
+/*招聘详情*/
+.content>ul>li>.recruit_detail{
+	width: 100%;
+	
+	display: none;
+}
+.content>ul>li>.recruit_detail>div{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 22px;
+	border-radius: 5px;
+	background-color: #EBEBEB;
+	font-size: 14px;
+	line-height: 28px;
+	margin:10px 0 30px;
+	position: relative;
+}
+.content>ul>li>.recruit_detail>div:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+    left: 60px;
+    top: -10px;
+    border-bottom: 10px solid #E8E8E8;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+ul>li.recruit_first span{
+	color: #e9811a;
+}
+ul>li.recruit_first .icon-jian1{
+	top:0;
+}		
+ul>li.recruit_first .icon-jia1{
+	top:20px;
+}
+ul>li.recruit_first .recruit_detail{
+	display: block;
+}
+/*邮箱*/
+.content>.email{
+	
+	margin: 30px auto;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+.content>.email>p{
+	background-color: #E4702A;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 18px;
+}
+.content>.email span{
+	font-size: 16px;
+}

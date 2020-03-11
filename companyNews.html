@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公司新闻-凯东源城配官网-专业的快消品城市配送服务商</title>
+	<meta name="keywords"  content="仓库租赁、仓库出租、商超配送、超市配送、门店配送、便利店配送、城市配送、快消品城配、仓配一体化、供应链优化、流通服务商" />
+
+	<meta name="description" content="凯东源城配可以为企业级客户提供仓库租赁、仓库托管、同城物流配送、商超配送、连锁便利店配送，涵盖仓到仓、仓到店等多种配送形式，能为客户提供分拣、分装、贴标、一件代发等增值服务。另有“流通服务商”模式专为品牌商提供快消品供应链优化服务。" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/news.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<link rel="icon" href="images/LOGO.png">
+	<script src='js/jquery-1.12.3.min.js'></script>
+	
+</head>
+<body>
+			
+	<!-- 头部开始 -->
+	<header>
+		
+	</header>
+	<!-- 加载头部内容 -->
+	<script src="head.js"></script>
+	<!-- 头部结束 -->
+
+	<!-- 主体内容开始 -->
+	<div class="container">
+
+	</div>
+	<!-- 主体内容结束 -->
+
+	<!-- 尾部开始 -->
+	<footer>
+		<div class="Foot_Bottom">
+			<div id="NetworkSupervision">
+				<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=a3f48d97-dcb7-48b3-92ed-755f3d9fbc58&width=75&height=105&type=1" type="text/javascript" charset="utf-8"></script>
+			</div>
+		</div>
+	</footer>
+	<!-- 尾部结束 -->
+
+
+	<!-- 加载头部和尾部内容 -->
+	<script src="load_common.js"></script>
+
+	 <script src="js/lightbox-plus-jquery.min.js"></script>
+	 <script src="js/jqpaginator.min.js"></script>
+	<script>
+		var that = this; 
+
+		addHtml("images/news/news-.jpg","News","Information","新闻资讯",'<li class="companyNews"><a href="./companyNews.html">公司新闻</a></li><li class="industryNews"><a href="./industryNews.html">行业新闻</a></li>',"公司新闻","COMPANY NEWS",'<div class="newsContainer"><div class="timeLine"></div></div><div id="pagination"></div>');
+
+		$.ajax({
+		    type: "POST",
+
+		    url: "http://139.199.84.165:8090/news.php",
+contentType:"application/x-www-form-urlencoded",
+        	
+		    data:{"InfoID":0},
+		    success: function(msg){
+		    
+		        var resData=eval ("(" + msg + ")");
+				var titleImg,samllContent;
+
+		   		for(var m = resData.length-1;m>=0;m--){
+
+		   			if(resData[m].Content.split("src=")[1]){
+
+		   				titleImg= "http://139.199.84.165:8090" + resData[m].Content.split('src="')[1].split('"')[0];
+		   		
+		   			}else{
+		   				titleImg='images/news/companyNews.jpg';
+		   			}
+		   			
+					samllContent=resData[m].Content.replace(/<\/?.+?>/g,"");
+					samllContent=samllContent.replace(/ /g,"");//dds为得到后的内容
+					
+					samllContent=samllContent.substring(0,65)+"...";
+
+					$('.newsContainer').append('<div class="newContent"><div class="date_label">' + resData[m].AddTime.date.substring(0,10) + '</div><div class="image_text"><div class="newsImg"><a href=""><img src="'+titleImg+'"  rel="lightbox"  alt=""/></a><div class="newsIcon"><a  class="ssuo" href="'+titleImg+'" class="example-image-link" data-lightbox="example-1" ><i class="iconfont icon-sousuo"></i></a><a href=""  class="lianjie"><i class="iconfont icon-lianjie"></i></a></div></div><div class="newsText"><h2><a href="">' + resData[m].Title + '</a></h2><p>'+samllContent+'</p></div></div></div>')
+				}
+
+				var newsLength = resData.length-1;
+		
+				if(newsLength % 10 == 0){
+
+					var totalPages = newsLength / 10;
+
+				}else if(newsLength %10!=0){
+
+					var totalPages = parseInt(newsLength / 10 ) + 1;
+					
+				}
+				//从新闻详情页返回后
+				var currentPage ;
+				if(that.location.href.split("=")[1]){
+
+					currentPage = parseInt(that.location.href.split("=")[1]);
+
+					var arr = window.location.href.split('/');
+					arr = arr[arr.length-1].split('?');
+
+					$('.botLeft_position ul li').each(function(i){
+
+						if($('.botLeft_position ul li').eq(i)[0].className==arr[0].slice(0,-5)){
+					
+							$('.botLeft_position ul li').eq(i).css({"background-color":"#fff","border-left":"5px solid #ec662c"})
+						}
+					})
+
+				}else{
+
+					currentPage = 1;
+				}
+
+				//分页
+				$('#pagination').jqPaginator({
+				    totalPages: totalPages,
+				    visiblePages: 10,
+				    currentPage: currentPage,
+
+				    first: '<li class="first">第一页</li>',
+				    prev: '<li class="prev">上一页</li>',
+				    next: '<li class="next">下一页</li>',
+				    last: '<li class="last">最后一页</li>',
+				    page: '<li class="page">{{page}}</li>',
+				    onPageChange: function (num) {
+				    	
+				    	var visibNum;
+				    	$(".newsContainer .newContent").each(function(i){
+				    		if((i%10==0)&&(i/10==num-1)){
+				    			visibNum=i;
+				    			return;
+				    		}
+				    	})
+				    	$(".newsContainer .newContent").each(function(i){
+				    		$(this).css("display","none")
+				    	})
+
+				    	for(var j=visibNum;j<visibNum+10;j++){
+				    		$(".newsContainer .newContent").eq(j).css("display","block");
+				    		$(".newsContainer .newContent").eq(j).find(".newsImg").children("a").attr("href","companyDetailNews.html?idx=" + resData[newsLength - j].ID + "&currentPage=" + num);
+				    		$(".newsContainer .newContent").eq(j).find(".lianjie").attr("href","companyDetailNews.html?idx=" + resData[newsLength - j].ID + "&currentPage=" + num);
+				    		$(".newsContainer .newContent").eq(j).find(".newsText").find("a").attr("href","companyDetailNews.html?idx=" + resData[newsLength - j].ID + "&currentPage=" + num);
+
+				    		if(j+1==resData.length){
+				    			return;
+				    		}
+
+
+				    	}
+				    }
+				});	
+		    }
+		});
+	</script>
+	<script>
+		var  _hmt  =  _hmt  ||  [];
+		(function()  {
+		    var  hm  =  document.createElement("script");
+		    hm.src  =  "https://hm.baidu.com/hm.js?300f74f8e279b0f9f25bb5d51c900a3f";
+		    var  s  =  document.getElementsByTagName("script")[0];  
+		    s.parentNode.insertBefore(hm,  s);
+		})();
+	</script>
+</body>
+</html>

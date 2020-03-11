@@ -1,0 +1,283 @@
+.Tab{
+	margin-top: 50px;
+	width:100%;
+	text-align: center;
+}
+/*tab头部*/
+.Tab>.tabHead{
+	overflow: hidden;
+	display: inline-block;
+}
+.Tab>.tabHead>div{
+	float: left;
+	border:1px solid #ec662c;
+	margin-right: 30px;
+	cursor: pointer;
+	position: relative;
+}
+.Tab>.WarehousSer_tabHead{
+	width: 100%;
+	display: flex;
+}
+.Tab>.WarehousSer_tabHead>div{
+	margin-right: 3px;
+	flex-grow: 1;
+	text-align: center;
+}
+.Tab>.tabHead>div:last-child{
+	margin-right: 0;
+}
+.Tab>.tabHead>.tabFirst{
+	background-color: #ec662c;
+}
+.Tab>.tabHead>.tabFirst span{
+	color: #fff;
+}
+.Tab>.tabHead>div>div{
+	position: absolute;
+	top: 0;left: 0;
+	height: 100%;
+	background-color:  #ec662c;
+	width: 100%;
+	transition:all  0.2s ease-in-out;
+	transform:scale(0,1);
+	z-index: -1;
+}
+
+.Tab>.tabHead>div:hover>div{
+	transform:scale(1,1);
+	background-color: #ec662c;
+}
+.Tab>.tabHead>div:hover>span{
+	color: #fff;
+}
+.Tab>.tabHead>div span{
+	font-size: 16px;
+	color: #ec662c;
+	padding: 12px 30px;
+	display: inline-block;
+	transition:all  0.2s;
+}
+/*tab内容*/
+.Tab>.tabContent{
+	padding: 20px 0 50px;box-sizing: border-box;
+	text-align: left;
+}
+.Tab>.tabContent>div p{
+	text-indent: 2em;
+	line-height: 28px;
+	margin-top: 20px;
+}
+.Tab>.tabContent h4{
+	margin: 20px 0;
+}
+.Tab>.tabContent>div{
+	display: none;
+}
+.Tab>.tabContent>.tab_content_first{
+	display: block;
+}
+h4.center{
+	text-align: center;
+	font-size: 18px;
+}
+.center{
+	text-align: center;
+}
+h4.special{
+	font-size: 17px;
+	font-weight: 600;
+}
+.content>.teshu{
+	font-size: 18px;
+	font-weight: 700;
+	margin:35px 0;
+	text-indent: 2em;
+}
+.content>div p{
+	line-height: 30px;
+}
+/*二维码图片样式*/
+figure{
+	text-align: center;
+}
+img.XQ_style{
+	width: 200px;
+}
+
+/*仓库轮播图图片样式*/
+.Wareh_Serv_image_swiper{
+	width: 630px;
+	margin: 0px auto;
+}
+.Wareh_Serv_big_images{
+	width: 630px;
+	overflow: hidden;
+}
+.Wareh_Serv_image_swiper img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.Wareh_Serv_image_swiper .Wareh_Serv_list{
+	width: 630px;
+	margin-top: 17px;
+	position: relative;
+	overflow: hidden;
+}
+.Wareh_Serv_image_swiper ul{
+	width: auto;
+	display: inline-flex;
+}
+.Wareh_Serv_image_swiper ul>li{
+	width:146.25px;
+	margin-right: 15px;
+	float: left;
+	padding: 0;
+	margin-bottom: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	border:3px solid #fff;
+	cursor: pointer;
+}
+.Wareh_Serv_image_swiper ul>li:first-child{
+	border:3px solid #ec662c;
+}
+.Wareh_Serv_image_swiper ul>li:last-child{
+	margin-right: 0;
+}
+.Wareh_Serv_swiperBtn{
+	display: none;
+}
+.Wareh_Serv_swiperBtn>div{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 40px;
+	color: #fff;
+	z-index: 22;
+}
+.Wareh_Serv_swiperBtn>div:nth-child(1){
+	left: 7px;
+}
+.Wareh_Serv_swiperBtn>div:nth-child(2){
+	right: 7px;
+}
+
+@media screen and (max-width: 768px){
+	.Tab{
+		margin-top: 4vw;
+	}
+	/*tab头部*/
+	.Tab>.tabHead>div{
+		margin-right: 0.5vw;
+	}
+	/*.Tab>.WarehousSer_tabHead{
+		width: 100%;
+		display: flex;
+	}
+	.Tab>.WarehousSer_tabHead>div{
+		margin-right: 3px;
+		flex-grow: 1;
+		text-align: center;
+	}
+	.Tab>.tabHead>div:last-child{
+		margin-right: 0;
+	}
+	.Tab>.tabHead>.tabFirst{
+		background-color: #ec662c;
+	}
+	.Tab>.tabHead>.tabFirst span{
+		color: #fff;
+	}*/
+/*	.Tab>.tabHead>div>div{
+		position: absolute;
+		top: 0;left: 0;
+		height: 100%;
+		background-color:  #ec662c;
+		width: 100%;
+		transition:all  0.2s ease-in-out;
+		transform:scale(0,1);
+		z-index: -1;
+	}
+
+	.Tab>.tabHead>div:hover>div{
+		transform:scale(1,1);
+		background-color: #ec662c;
+	}
+	.Tab>.tabHead>div:hover>span{
+		color: #fff;
+	}*/
+	.Tab>.tabHead>div span{
+		font-size: 2vw;
+		/*color: #ec662c;*/
+		padding: 2vw 1.5vw;
+	/*	display: inline-block;
+		transition:all  0.2s;*/
+	}
+	/*tab内容*/
+	.Tab>.tabContent{
+		padding: 4vw 0 6vw;
+	}
+	.Tab>.tabContent>div p{
+		text-indent: 2em;
+		line-height: 7vw;
+		margin-top: 2vw;
+	}
+	.Tab>.tabContent h4{
+		margin: 3vw 0;
+	}
+	/*h4.center{
+		text-align: center;
+		font-size: 18px;
+	}
+	.center{
+		text-align: center;
+	}
+	h4.special{
+		font-size: 17px;
+		font-weight: 600;
+	}
+	.content>.teshu{
+		font-size: 18px;
+		font-weight: 700;
+		margin:35px 0;
+		text-indent: 2em;
+	}
+	.content>div p{
+		line-height: 30px;
+	}*/
+	/*二维码图片样式*/
+	img.XQ_style{
+		width: 50vw;
+	}
+
+	/*仓库轮播图图片样式*/
+	.Wareh_Serv_image_swiper{
+		width:100%;
+	}
+	.Wareh_Serv_big_images{
+		width: 100%;
+	}
+	.Wareh_Serv_image_swiper .Wareh_Serv_list{
+		width: 100%;
+		margin-top: 2.5vw;
+	}
+	.Wareh_Serv_image_swiper ul>li{
+		width:17.25vw;
+		margin-right: 1vw;
+		border:3px solid #fff;
+	}
+	.Wareh_Serv_swiperBtn>div{
+		top: 50%;
+		font-size: 8vw;
+	}
+	.Wareh_Serv_swiperBtn>div:nth-child(1){
+		left: 1vw;
+	}
+	.Wareh_Serv_swiperBtn>div:nth-child(2){
+		right: 1vw;
+	}
+}
